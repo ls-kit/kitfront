@@ -1,0 +1,50 @@
+
+// font family
+$sansFont:Source Sans Pro, sans-serif; 
+
+// font wight
+$fontWSM:400;
+$fontWMD:600;
+$fontWLG:700;
+$fontWXL:900;
+
+// color
+$darkGray:#414141;
+$lightGray:#707070;
+$whiteColor:#FFFFFF;
+$secOrangeColor:#F47F6F;
+$orangeColor:#F15A46;
+$depOrangeColor:#D63722;
+$depOrangeColor1:#E3402B;
+$yellowColor:#FFA800;
+
+
+
+
+$whiteOffColor:#FEF7F6;
+
+// breakPoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 991px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+body, p{
+    font: {
+        size: 16px;
+        weight: $fontWSM;
+      }
+}
+
+p{
+    margin: 0 0 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: $fontWMD;
+    margin: 0 0 15px;
+    line-height: 1.2em;
+
+}
+
