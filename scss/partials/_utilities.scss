@@ -63,9 +63,9 @@ h1,h2,h3,h4,h5,h6{
   
     &:hover{
         text-decoration: none;
-        color: $whiteColor;
         background-color: $whiteColor;
         color: $orangeColor;
+        border: 2px solid $orangeColor;
     }
 }
 

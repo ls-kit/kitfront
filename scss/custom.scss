@@ -618,6 +618,45 @@ body{
         width: 80%;
       }
   }
+
+
+  
+// pagination-container
+.pagination-container{
+    padding: 80px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    ul{
+        li{
+            .active-page{
+                display: inline-block;
+                padding: 10px 15px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                color: $whiteColor;
+                background: $orangeColor;
+                border-radius: 5px;
+                margin: 2px 3px;
+
+            }
+            .in-active-page{
+                display: inline-block;
+                padding: 10px 15px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                color: $orangeColor;
+                background: $whiteColor;
+                border-radius: 5px;
+                box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+                margin: 2px 3px;
+            }
+        }
+    }
+}
   
 
 
