@@ -12,6 +12,7 @@ $fontWXL:900;
 $darkGray:#414141;
 $lightGray:#707070;
 $whiteColor:#FFFFFF;
+$secondWhite:#FEF7F6;
 $secOrangeColor:#F47F6F;
 $orangeColor:#F15A46;
 $depOrangeColor:#D63722;
@@ -46,5 +47,25 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 0 15px;
     line-height: 1.2em;
 
+}
+
+.customBtn{
+    display: inline-block;
+    background: $orangeColor;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: $whiteColor;
+    line-height: 24px;
+    font: {
+        weight:$fontWSM;
+        size: 18px;
+    }
+  
+    &:hover{
+        text-decoration: none;
+        color: $whiteColor;
+        background-color: $whiteColor;
+        color: $orangeColor;
+    }
 }
 
