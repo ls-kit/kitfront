@@ -1,5 +1,26 @@
 @import "partials/utilities.scss";
 
+textarea:focus,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  padding: 10px 7px;
+}
+
+
+
 .active-color {
     color: $orangeColor;
 };
@@ -35,7 +56,6 @@
         li{
             padding: 7px 10px;
             margin: 6px;
-
             .drop-button{
                 color: $darkGray;
             }
@@ -50,7 +70,6 @@
 }
 
 .templates{
-
     .template-title{
         @extend .page-title;
         padding: 25px 5px;
@@ -104,4 +123,147 @@
         box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
         
     }
+}
+
+
+#proposalModal{
+    font-family: $ralewayFont;
+}
+.modal-content{
+    padding: 20px 30px;
+
+    .modal-title{
+        color: $darkGray;
+        font: {
+            weight:$fontWLG;
+            size: 25px;
+        }
+        line-height: 30px;
+    }
+}
+.modal-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-body{
+    .direction{
+        color: $lightGray;
+        font: {
+            weight:$fontWSM;
+            size: 16px;
+        }
+        line-height: 21px;
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    form{
+        .require{
+            color: $lightGray;
+            font: {
+                weight:$fontWSM;
+                size: 14px;
+            }
+            line-height: 16px;
+
+        }
+
+        .project-type{
+            color: $darkGray;
+            font: {
+                weight:$fontWLG;
+                size: 16px;
+            }
+            line-height: 19px;
+            padding-top: 14px ;
+            padding-bottom: 0px!important;
+        }
+        
+        input, textarea {
+            color: $lightGray;
+            font: {
+                weight:$fontWSM;
+                size: 14px;
+            }
+            line-height: 16px;
+           
+        }
+         label {
+            color: $lightGray;
+            font: {
+                weight:$fontWMD;
+                size: 14px;
+            }
+            line-height: 16px;
+           
+        }
+
+        .proposal-submit-btn{
+            @extend .customBtn;
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+        }
+    }
+
+   
+}
+
+.form-space{
+    padding: 0 1.5rem;
+
+    @media only screen and (max-width:600px) {
+        padding: 0 0;
+    }
+}
+
+
+.address-title{
+    text-align: center;
+    color: $darkGray;
+    font: {
+        weight:$fontWSM;
+        size: 16px;
+    }
+    line-height: 19px;
+    padding: 10px 0 20px 0;
+}
+
+.address-section{
+    padding: 0 20px;
+}
+
+.address-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address{
+    
+    h5{
+        color: $darkGray;
+        font: {
+            weight:$fontWLG;
+            size: 19px;
+        }
+        line-height: 24px;
+    }
+
+    p{
+        color: $darkGray;
+        font: {
+            weight:$fontWSM;
+            size: 16px;
+        }
+        line-height: 19px;
+    }
+}
+
+
+.close-btn{
+    outline: none;
+    border: none;
+    background: transparent;
 }

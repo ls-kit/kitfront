@@ -1,6 +1,7 @@
 
 // font family
 $sansFont:Source Sans Pro, sans-serif; 
+$ralewayFont:Raleway, sans-serif;
 
 // font wight
 $fontWSM:400;
@@ -65,7 +66,7 @@ h1,h2,h3,h4,h5,h6{
         text-decoration: none;
         background-color: $whiteColor;
         color: $orangeColor;
-        border: 2px solid $orangeColor;
+        border: 1px solid $orangeColor;
     }
 }
 
