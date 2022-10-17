@@ -140,22 +140,30 @@
         background: $orangeColor;
         display: flex;
         padding: 22px 45px;
+        align-items: center;
 
-        .avatar{
+        .avatar-icon{
             background-color: $whiteColor;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0 24px;
+            color: $orangeColor;
+            padding: 25px 25px;
             border-radius: 50%;
-
-            img{
-                display: inline-block;
-                width: 75%;
-                // padding: 0 24px;
-                // border-radius: 50%;
-            }
+            font-size: 24px;
         }
+        // .avatar{
+        //     background-color: $whiteColor;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     padding: 0 24px;
+        //     border-radius: 50%;
+
+        //     img{
+        //         display: inline-block;
+        //         width: 75%;
+        //         // padding: 0 24px;
+        //         // border-radius: 50%;
+        //     }
+        // }
 
         div{
             padding-left: 30px;
@@ -323,8 +331,15 @@
         font-size: 18px;
         line-height: 24px;
     }
-
     .active-tab::after{
         right:30%;
+    }
+
+    .position{
+        flex-direction: column;
+        padding: 20px;
+        .avatar-icon{
+            margin-bottom: 10px;
+        }
     }
 }
