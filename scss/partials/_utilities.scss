@@ -10,6 +10,7 @@ $fontWLG:700;
 $fontWXL:900;
 
 // color
+$dark1:#000;
 $darkGray:#414141;
 $lightGray:#707070;
 $whiteColor:#FFFFFF;
@@ -19,6 +20,11 @@ $orangeColor:#F15A46;
 $depOrangeColor:#D63722;
 $depOrangeColor1:#E3402B;
 $yellowColor:#FFA800;
+
+$activeColor: $orangeColor;
+.in-activeColor{
+    color: $lightGray;
+} 
 
 
 
@@ -67,6 +73,39 @@ h1,h2,h3,h4,h5,h6{
         background-color: $whiteColor;
         color: $orangeColor;
         border: 1px solid $orangeColor;
+    }
+}
+
+.btn-orange{
+    display: inline-block;
+    background: $orangeColor;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: $whiteColor;
+    line-height: 24px;
+    font: {
+        weight:$fontWSM;
+        size: 18px;
+    }
+
+    &:hover{
+        color: $whiteColor;
+    }
+}
+.btn-white{
+    display: inline-block;
+    background: $whiteColor;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: $orangeColor;
+    line-height: 24px;
+    font: {
+        weight:$fontWSM;
+        size: 18px;
+    }
+
+    &:hover{
+        color: $orangeColor;
     }
 }
 

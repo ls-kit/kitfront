@@ -1,0 +1,330 @@
+@import "partials/utilities.scss";
+
+.career-head{
+    background: $orangeColor;
+    .career-head-row{
+        display: flex;
+        align-items: center;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        color: $whiteColor;
+
+        .page-title{
+            line-height: 55px;
+            font: {
+                weight:$fontWXL;
+                size: 60px;
+            }
+        }
+
+        p{
+            line-height: 24px;
+            font: {
+                weight:$fontWSM;
+                size: 16px;
+            }
+        }
+
+       
+        
+    }
+}
+
+.benefit-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-title{
+        line-height: 55px;
+        font: {
+            weight:$fontWLG;
+            size: 50px;
+        }
+
+}
+
+.benefit{
+    display: flex;
+
+    div{
+        h6{
+            line-height: 45px;
+            font: {
+                weight:$fontWLG;
+                size: 30px;
+            }
+        }
+        p{
+            line-height: 24px;
+            color: #3E3E3E;
+            font: {
+                weight:$fontWSM;
+                size: 16px;
+            }
+        }
+    }
+}
+.benefit-circle{
+    padding: 0px 14px;
+    background: $orangeColor;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    line-height: 16px;
+    color: $whiteColor;
+    font: {
+         weight:$fontWLG;
+         size: 24px;
+    }
+}
+
+.career-btn{
+    display: inline-block;
+    background: $whiteColor;
+    border-radius: 10px;
+    padding: 7px 10px;
+    color: $orangeColor;
+    line-height: 24px;
+    font: {
+        weight:$fontWLG;
+        size: 18px;
+    }
+  
+    &:hover{
+        color: $orangeColor;
+        
+    }
+}
+
+// staff
+
+.staff-section{
+    
+}
+
+.title{
+    text-align: center;
+    line-height: 55px;
+    color: #111111;
+    font: {
+        weight:$fontWLG;
+        size: 50px;
+    }
+    padding: 35px 5px;
+}
+
+.staff{
+    background: $whiteColor;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    p{
+        padding: 11px 0;
+        line-height: 24px;
+        color: #6E6E6E;
+        font: {
+            weight:$fontWSM;
+            size: 16px;
+        } 
+        span{
+            font-weight: $fontWLG;
+            color: #111111;
+        }
+    }
+
+}
+
+.job-description{
+    .position{
+        background: $orangeColor;
+        display: flex;
+        padding: 22px 45px;
+
+        .avatar{
+            background-color: $whiteColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 24px;
+            border-radius: 50%;
+
+            img{
+                display: inline-block;
+                width: 75%;
+                // padding: 0 24px;
+                // border-radius: 50%;
+            }
+        }
+
+        div{
+            padding-left: 30px;
+            .job-role{
+                line-height: 34px;
+                color: $whiteColor;
+                font: {
+                    weight:$fontWLG;
+                    size: 30px;
+                }  
+            }
+            .type{
+                line-height: 28px;
+                color: $whiteColor;
+                font: {
+                    weight:$fontWMD;
+                    size: 20px;
+                }  
+            }
+        }
+    }
+}
+
+.topic{
+    padding-top: 10px;
+    h5{
+        line-height: 24px;
+        color: $dark1;
+        font: {
+            weight:$fontWMD;
+            size: 20px;
+        } 
+    }
+    p{
+        line-height: 24px;
+        color: #6E6E6E;
+        font: {
+            weight:$fontWSM;
+            size: 16px;
+        } 
+
+    }
+    ul {
+        li{
+            
+            line-height: 24px;
+            
+            font: {
+                weight:$fontWSM;
+                size: 16px;
+            }
+            span {
+                color: #6E6E6E;
+            }
+        }
+    }
+}
+
+.try{
+    margin: 30px 0;
+    background-image: url(/assets/img/career-bg.png);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    padding: 20px 60px;
+
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div{
+            .try-title{
+                color: $whiteColor;
+                line-height: 50px;
+            
+                font: {
+                    weight:$fontWXL;
+                    size: 50px;
+                }
+            }
+        }
+    
+}
+
+.position-tab{
+    margin: 35px 0;
+    background: $whiteColor;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h6{
+        line-height: 30px;
+        cursor: pointer;
+        font: {
+            weight:$fontWMD;
+            size: 20px;
+        }
+        text-align: center;
+        padding: 0 5px;
+    }
+
+}
+
+#tab1{
+    display: block;
+}
+#tab2{
+    display: none;
+}
+#tab3{
+    display: none;
+}
+
+.active-tab{
+    color: $activeColor;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        border: 2px solid $orangeColor;
+        bottom: -16px;
+        width: 70px;
+        right: 35%;;
+    }
+}
+
+@media only screen and (max-width:$breakpoint-lg) {
+    .try{
+        flex-direction: column;
+        justify-content: space-around;
+
+        div{
+            .try-title{
+                line-height: 40px;
+                font-weight: $fontWMD;
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width:767px) {
+    .active-tab{
+        color: $activeColor;
+        position: relative;
+    
+        &::after{
+            content: "";
+            position: absolute;
+            border: 2px solid $orangeColor;
+            bottom: -16px;
+            width: 45px;
+            right:30%;;
+        }
+    }
+}
+@media only screen and (max-width:600px) {
+    .position-tab h6{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .active-tab::after{
+        right:30%;
+    }
+}
