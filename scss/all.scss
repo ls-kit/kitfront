@@ -24,8 +24,10 @@ body{
 
 .sec-title{
     text-align: center;
-    font-weight: 700;
-    padding: 25px 0;
+    font-weight: $fontWLG;
+    font-size: 40;
+    line-height: 50px;
+    padding: 25px 0 10px 0;
 }
 
 .customBtn{
@@ -1561,9 +1563,177 @@ footer{
     }
 }
 
+// Featured themes
+
+.feat-container{
+//     background-image: url(/assets/img/products/boreder.png);
+//    min-height: 50vh;
+//     width: 100%;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+        position: relative;
+}
+
+.feat-text{
+    padding: 30px 40px;
+    background: #fbfbfd;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    left: -20px;
+    min-height: inherit;
+    bottom: 20px;
+    h3{
+        font: {
+            weight:$fontWLG;
+            size: 30px;
+            
+        }
+        line-height: 28px;
+        color: $dark1;
+    }
+    p{
+        font: {
+            weight:$fontWSM;
+            size: 16px;
+            
+        }
+        line-height: 24px;
+        color: $lightGray;
+    }
+
+}
+
+
+
+.them-card{
+    p{
+        font: {
+            weight:$fontWSM;
+            size: 13px;
+            
+        }
+     
+        color: $lightGray;
+        margin-bottom: 0;
+    }
+}
+
+.them-title{
+    font: {
+        weight:$fontWMD;
+        size: 13px;
+        
+    }
+    color: #111111;
+    margin-bottom: 0;
+
+}
+
+.them-rate{
+    color: #FFA800;
+    font: {
+        weight:$fontWMD;
+        size: 13px;
+        
+    }
+    line-height: 24px;
+}
+
+.them-price{
+    font: {
+        weight:$fontWMD;
+        size: 20px;
+        
+    }
+    color: #111111;
+    margin-bottom: 0;
+}
+
 
 /* 
-***************product page css 
+***************product page css  end
+*/ 
+
+.them-header{
+    background: #F3F3F3;
+    border: 0.5px solid #9F9F9F;
+    padding: 25px 0;
+
+    .container{
+        div{
+            p{
+                color: #3E3E3E;
+               
+            }
+        }
+    }
+}
+
+.them-menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+        margin: 3px 20px;
+        a{
+            color: #3E3E3E;
+            font: {
+                weight:$fontWSM;
+                size: 16px;
+                
+            }
+        }
+    }
+}
+
+.author-them{
+   color: #3E3E3E;
+}
+
+.single-them-title{
+    font: {
+        weight:$fontWLG;
+        size: 40px;       
+    }
+    line-height: 18px;
+}
+
+.them-footer{
+    background: #3E3E3E;
+    .container{
+       .row{
+        padding: 75px 80px;
+
+        @media only screen and (max-width:600px) {
+            padding: 20px 25px;
+        }
+       }
+    }
+}
+
+
+/* 
+*************** single-product page css start
+*/ 
+
+
+
+
+
+
+
+
+
+/* 
+*************** single-product page css  start
 */ 
 
 
