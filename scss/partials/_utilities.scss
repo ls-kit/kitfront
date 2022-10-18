@@ -26,9 +26,6 @@ $activeColor: $orangeColor;
     color: $lightGray;
 } 
 
-
-
-
 $whiteOffColor:#FEF7F6;
 
 // breakPoints
@@ -37,6 +34,17 @@ $breakpoint-md: 767px;
 $breakpoint-lg: 991px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
+
+textarea:focus,
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  padding: 10px 7px;
+}
 
 body, p{
     font: {
