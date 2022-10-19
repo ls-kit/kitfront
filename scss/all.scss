@@ -1706,16 +1706,86 @@ footer{
     line-height: 18px;
 }
 
+.single-them-head{
+    h4{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 15px;
+    }
+
+    h5{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+.single-them-feat{
+    font-family: 'Roboto';
+    h6{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    ul ,ol {
+        li{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #3E3E3E;
+        }
+    }
+}
+
+.them-cart{
+    background: #F3F3F3;
+    border: 0.5px solid #9F9F9F;
+    border-radius: 10px;
+    padding: 20px 12px;
+
+    i ,p{
+       color: $lightGray; 
+       font-size: 16px;
+       padding-top: 10px ;
+    }
+
+}
+.them-profile{
+    background: #F3F3F3;
+    border: 0.5px solid #9F9F9F;
+    border-radius: 10px;
+    padding: 20px 12px;
+}
+
+
+
 .them-footer{
+    font-family: 'Roboto';
     background: #3E3E3E;
     .container{
        .row{
         padding: 75px 80px;
 
-        @media only screen and (max-width:600px) {
+        @media only screen and (max-width:767px) {
             padding: 20px 25px;
         }
        }
+    }
+}
+
+.rel-card{
+    h4{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        color: #0E0E0E;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #6E6E6E;
     }
 }
 
