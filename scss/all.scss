@@ -1693,7 +1693,7 @@ footer{
             }
 
             @media only screen and(max-width:767px){
-                padding: 15px 5px 75px 50px;
+                padding: 15px 5px 25px 20px;
             }
         }
     }
@@ -1869,10 +1869,16 @@ footer{
     .single-product-banner p, .provided-feat .feat ul li, .QA p{
         font-size: 17px;
     }
+    .what-learn p{
+        font-size: 19px;
+    }
+    .end-list li{
+        font-size: 15px;
+    }
     .page-title, .faq-title{
         font-size: 30px;
     }
-    .templates .template-title, .guarantee-sec h3,  {
+    .templates .template-title, .guarantee-sec h3 {
         font-size: 25px;
     }
     .feat-text h3{
