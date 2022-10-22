@@ -36,6 +36,68 @@ $breakpoint-lg: 991px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
+// from old code 
+
+$source: "Source Sans Pro", sans-serif;
+$inter: "Inter", sans-serif;
+$roboto: "Roboto", sans-serif;
+
+/* colors */
+$dark: #414141;
+$orange: #f15a46;
+$orange1: #e3402b;
+$dark1: #111111;
+$muted: #6e6e6e;
+$inactive: #f3f3f3;
+$strategy: #f47f6f;
+$footer: #d63722;
+
+/* gaps */
+$hundred: 100px;
+$sixty: 60px;
+$fifty: 50px;
+$seventy: 70px;
+
+/* sizes */
+$twelve: 12px;
+$twentyTwo: 22px;
+$twentyFour: 24px;
+$twenty: 20px;
+$thirty: 30px;
+$thirtyFour: 34px;
+$fourty: 40px;
+$fourtyFive: 45px;
+
+/* percentages */
+$twentyP: 20%;
+
+/* universal */
+
+.source {
+font-family: $source;
+}
+
+.inter,
+* {
+font-family: $inter;
+}
+
+.roboto {
+font-family: $roboto;
+}
+
+.fs-22 {
+font-size: $twentyTwo;
+}
+
+body,
+html {
+overflow-x: hidden;
+}
+
+
+// from old code 
+
 textarea:focus,
 input[type="text"],
 input[type="password"],
