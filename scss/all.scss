@@ -1566,12 +1566,6 @@ footer{
 // Featured themes
 
 .feat-container{
-//     background-image: url(/assets/img/products/boreder.png);
-//    min-height: 50vh;
-//     width: 100%;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
         position: relative;
 }
 
@@ -1791,19 +1785,265 @@ footer{
 
 
 /* 
-*************** single-product page css start
+*************** single-product page css end
 */ 
-
-
-
-
-
-
-
 
 
 /* 
-*************** single-product page css  start
+*************** single-course page css start
 */ 
+
+.single-product-banner{
+    background-image:linear-gradient(rgba(12, 12, 12, 0.5),rgba(20, 20, 20, 0.5)), url(/assets/img/about-hero.png);
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: $whiteColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        font: {
+            weight:$fontWLG;
+            size: 50px;       
+        }
+    }
+
+    p{
+        font: {
+            weight:$fontWSM;
+            size: 24px;       
+        }
+    }
+
+}
+
+.provided-feat{
+    .desc{
+        h3{
+            font: {
+                weight:$fontWLG;
+                size: 40px;       
+            } 
+        }
+        p{
+            font: {
+                weight:$fontWSM;
+                size: 16px;       
+            }
+            color: $lightGray;
+        }
+        h6{
+            font: {
+                weight:$fontWMD;
+                size: 18px;       
+            }
+        }
+    }
+
+    .feat{
+        background: $whiteColor;
+        border-top: 30px solid #F47B6B;
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        ul{
+            padding: 15px 5px 75px 50px;
+            li{
+                margin: 15px 0;
+                list-style: none;
+                font: {
+                    weight:$fontWSM;
+                    size: 20px;       
+                }
+                color: #414141;
+                span{
+                    margin-right: 10px;
+                }
+            }
+
+            @media only screen and(max-width:767px){
+                padding: 15px 5px 75px 50px;
+            }
+        }
+    }
+
+}
+
+.end-list{
+    li{
+        color: #414141;
+        margin: 7px 0;
+    }
+}
+
+.what-learn{
+    background: #F3F3F3;
+    p{
+        font: {
+            weight:$fontWSM;
+            size: 22px;       
+        }
+        color: #111111;
+    }
+    h6{
+        font: {
+            weight:$fontWLG;
+            size: 24px;       
+        }
+        color: #111111;
+    }
+
+
+}
+
+
+.instructor-sec{
+    background: #F3F3F3;
+    .ins-info{
+        h5{
+            font: {
+                weight:$fontWLG;
+                size: 24px;       
+            }
+            color: #111111;
+        }
+        h6{
+            font: {
+                weight:$fontWLG;
+                size: 18px;       
+            }
+            color: #111111;
+        }
+        .inst-desc{
+            color: $lightGray;
+            width: 55%;
+            @media only screen and(max-width:767px){
+              width: 100%;
+            }
+        }
+    }
+}
+
+.curriculum-list{
+    padding-left: 0;
+    div{
+        margin: 7px 0;
+        padding: 10px 15px;
+        background: #F3F3F3;
+        h6{
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.guarantee-sec{
+    background: #F3F3F3;
+    h3{
+        text-align: center;
+        font: {
+            weight:$fontWLG;
+            size: 35px;       
+        }
+        color: $dark2;
+    }
+    p{
+        padding: 0 25%;
+        @media only screen and(max-width:767px){
+            padding: 0 5px;
+          }
+    }
+   
+}
+.faq-title{
+        font: {
+            weight:$fontWLG;
+            size: 40px;       
+        }
+        color: $dark2;
+}
+.QA{
+    h5{
+        font: {
+            weight:$fontWLG;
+            size: 20px;       
+        }
+        color: $dark2;
+    }
+    p{
+        font: {
+            weight:$fontWSM;
+            size: 20px;       
+        }
+        color: $lightGray;
+    }
+
+}
+
+.payment-sec{
+    background: $orangeColor;
+    color: $whiteColor;
+    text-align: center;
+}
+
+.payment-method{
+    color: $dark1;
+    background: $whiteColor;
+    padding: 45px 30px;
+    box-shadow: 0px 15px 40px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 55%;
+    h5{
+        font-weight: $fontWLG;
+        font-size: 30px;
+        color: $dark2;
+    }
+    p{
+        font-weight: $fontWMD;
+        font-size: 18px;
+       
+    }
+    .price{
+        font-weight: $fontWLG;
+        font-size: 20px;
+        color: #414141;
+        span{
+            
+            font-size: 54px;
+        }
+    }
+
+    @media only screen and(max-width:767px){
+        width: 100%;
+      }
+    @media only screen and(max-width:991px) and(min-width:768px){
+        width: 80%;
+      }
+}
+
+.all-access{
+    position: relative;
+    img{
+        // width: 50px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+}
+/* 
+*************** single-course page css 
+*/ 
+
+
+
+
+
+
+
+
 
 
