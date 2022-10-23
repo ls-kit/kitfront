@@ -1862,8 +1862,409 @@ footer{
     }
 }
 /* 
-*************** single-course page css 
+*************** single-course page css  end
 */ 
+
+
+/* 
+*************** service page css  start
+*/ 
+
+.service-hero{
+    background-image:linear-gradient(rgba(12, 12, 12, 0.5),rgba(20, 20, 20, 0.5)), url(/assets/img/bg.jpg);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font: {
+            weight:$fontWLG;
+            size: 60px;
+        }
+        line-height: 75px;
+        text-align: center;
+        color: $whiteColor;
+        width: 50%;
+
+        span{
+            color:$orangeColor;
+        }
+        @media only screen  and (max-width: $breakpoint-md) {
+            width: 100%;
+            font: {
+                weight:$fontWMD;
+                size: 40px;
+            }
+            line-height: 50px;
+        }
+        @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl) {
+            width: 90%;
+            font: {
+                weight:$fontWMD;
+                size: 45px;
+            }
+            line-height: 55px;
+        }
+    }
+    p{
+        text-align: center;
+        font: {
+            weight:$fontWSM;
+            size: 20px;
+        }
+        line-height: 30px;
+        text-align: center;
+        color: $whiteColor;
+        width: 45%;
+        @media screen and (max-width: $breakpoint-md) {
+            width: 80%;
+           
+        }
+
+    }
+}
+
+// technologies section
+.technologies{
+    background-color: $whiteColor;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 60px;
+    margin-top: -50px;
+    h3{
+        text-align: center;
+        font-weight: 700;
+        padding: 25px 0;
+    }
+    padding-bottom: 10px;
+}
+
+.technology{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    img{
+        width: 75%;
+        display: inline-block;
+    }
+}
+
+// commitment section
+.commitment-img{
+    background-image: url(/assets/img/commitment.png);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: $whiteColor;
+        text-align: center;
+        line-height: 40px;
+        font: {
+            weight:$fontWLG;
+            font-size: 50px;
+        }
+    }
+}
+
+.commitment-desc{
+    padding-left: 65px;
+    h3{
+        font: {
+            weight:$fontWLG;
+            font-size: 40px;
+        }
+        line-height: 45px;
+        padding-right: 100px;
+        @media screen and (max-width: $breakpoint-md) {
+            padding-right: 10px;
+            
+        }
+    }
+    h6{
+        font: {
+            weight:$fontWXL;
+            font-size: 20px;
+        }
+        line-height: 28px;
+       
+    }
+    p{
+        font: {
+            weight:$fontWSM;
+            font-size: 16px;
+        }
+        line-height: 24px;
+        color: $lightGray;
+    }
+    @media screen and (max-width: $breakpoint-md) {
+        padding-left: 10px;
+        text-align: center;
+    }
+}
+
+.services{
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        display: inline-block;
+        object-fit: contain;
+        width: 70%;
+    }
+}
+
+
+// terms
+@mixin termsCard($bgColor, $iconBg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 41px 18px;
+    background: $bgColor;
+    // background: #FEF7F6;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    text-align: center;
+
+    img{
+        display: inline-block;
+        background-color: $iconBg;
+       
+        object-fit: contain;
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    h3{
+        font: {
+            weight:$fontWXL;
+            font-size: 30px;
+        }
+        line-height: 30px;
+        padding: 20px 0 30px 0;
+        
+    }
+    p{
+        font: {
+            weight:$fontWSM;
+            font-size: 16px;
+        }
+        line-height: 24px;
+        color: $lightGray;
+        padding-bottom: 50px;
+    }
+}
+
+.fit{
+    @include termsCard($whiteOffColor,$whiteColor)
+}
+.others{
+    @include termsCard($whiteColor,$whiteOffColor)
+}
+
+.lern-more{
+    text-align: center;
+    padding: 20px 0px;
+
+    span{
+        display: inline-block;
+        margin-left: 10px;
+        img{
+            width: 100%x;
+        }
+    }
+}
+
+// partner
+.partners{
+    @media screen and (max-width: $breakpoint-md) {
+
+        text-align: center;
+    }
+}
+.partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 75%;
+    }
+   
+}
+
+// dev
+.dev{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    img{
+        width: 80%;
+        display: inline-block;
+    }
+
+    p{
+        font: {
+            weight:$fontWSM;
+            font-size: 16px;
+        }
+        line-height: 24px;
+        color: $lightGray;
+
+    }
+    h3{
+        font: {
+            weight:$fontWLG;
+            font-size: 40px;
+        }
+        line-height: 50px;
+        width: 90%;
+    }
+    .dev-box{
+        text-align: end;
+        @media screen and (max-width: $breakpoint-md) {
+
+            text-align: center;
+        }
+    }
+}
+
+// testimonial
+
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin reviewCard($bgColor, $iconBg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 18px;
+    background: $bgColor;
+    box-shadow: 0px 16.9231px 67.6923px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    margin: 0 15px;
+
+    img{
+        display: inline-block;
+        background-color: $iconBg;
+       
+        object-fit: contain;
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    h4{
+        font: {
+            font-size: 18px !important;
+        }
+        padding: 10px 0;
+        
+    }
+    p{
+        font: {
+            weight:$fontWSM;
+            font-size: 16px;
+        }
+        line-height: 24px;
+        color: $lightGray;
+        padding-bottom: 50px;
+    }
+}
+.star{
+    color: $yellowColor;
+}
+
+.reveiew1{
+    @include reviewCard($whiteColor,$whiteOffColor)
+}
+.reveiew2{
+    @include reviewCard(2$whiteOffColor,$whiteColor)
+}
+
+
+
+
+
+
+
+
+/* 
+*************** service page css  end
+*/ 
+
+
+/* 
+*************** free-course page css  start
+*/ 
+
+// ********header top
+.header-top{
+    background-color: $darkGray;
+    padding: 0 15px;
+    div{
+        ul{
+            li{
+                padding: 15px 0;
+                a{
+                    color: $whiteColor;
+                    padding: 0 20px;
+                    font: {
+                        size: 14px;
+                        weight: 900;
+                       
+                    }
+                    @media only screen and (min-width: $breakpoint-xxl)  {
+                        font-size: 16px;
+                    }
+                }
+            }
+           
+           }
+    }
+    span{
+        margin-right: 11px;
+    }
+}
+
+.social{
+   display: flex;
+   justify-content: flex-end;
+    @media only screen and (max-width: $breakpoint-md)  {
+        justify-content: flex-start;
+    }
+}
+
+
+/* 
+*************** free-course page css  start
+*/ 
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 992px){
     .single-product-banner p, .provided-feat .feat ul li, .QA p{
