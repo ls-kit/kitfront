@@ -2012,7 +2012,7 @@ footer{
     }
 }
 
-.services{
+.services-service{
     div{
         display: flex;
         justify-content: center;
@@ -2199,11 +2199,6 @@ footer{
 
 
 
-
-
-
-
-
 /* 
 *************** service page css  end
 */ 
@@ -2220,26 +2215,29 @@ footer{
     div{
         ul{
             li{
-                padding: 15px 0;
+                padding: 10px 0;
+                display: inline-block;
+                list-style: none;
                 a{
                     color: $whiteColor;
-                    padding: 0 20px;
+                    padding: 0 10px;
                     font: {
-                        size: 14px;
-                        weight: 900;
-                       
+                        size: 12px;
+                        weight: $fontWXL;                      
+                    }
+                    span{
+                        margin-right: 11px;
                     }
                     @media only screen and (min-width: $breakpoint-xxl)  {
                         font-size: 16px;
                     }
                 }
             }
-           
-           }
+        }
     }
-    span{
-        margin-right: 11px;
-    }
+    
+   
+    
 }
 
 .social{
@@ -2248,6 +2246,10 @@ footer{
     @media only screen and (max-width: $breakpoint-md)  {
         justify-content: flex-start;
     }
+}
+
+.course-side{
+    background-color: $darkGray;
 }
 
 
