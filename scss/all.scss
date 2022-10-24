@@ -339,128 +339,11 @@ body{
     background-position: center;
   }
 
-/* reponsiveness */
-@media screen and (max-width: 992px) {
-    .header-title-md {
-      font-size: 50px !important;
-    }
-  
-    .subtitle-md {
-      font-size: 18px;
-    }
-  
-    .counter-text {
-      font-size: $twentyFour;
-      font-weight: 800;
-    }
-  
-    .success.py-5 br {
-      display: none;
-    }
-  
-    .success .d-flex.align-items-center.justify-content-between.flex-wrap {
-      justify-content: center !important;
-    }
-  
-    .working .col-lg-6.text-end {
-      display: none;
-    }
-  
-    .processes.bg-orange.py-100 .d-flex {
-      flex-direction: column;
-    }
-  
-    .cardds.py-100 .card p {
-      height: auto;
-    }
-  
-    .cardds.py-100 .card {
-      height: 100%;
-    }
-  
-    .fs-50 {
-      font-size: $twentyFour;
-    }
-  
-    .sliderSection .col-md-3.p-2.m-auto {
-      display: none;
-    }
-  
-    .sliderSection .col-md-9 {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-    .doc-search{
-        width: 100%;
-    }
-    .search-btn{
-        display: none;
-    }
-    
-   
-  }
-  
-  @media screen and (max-width: 767px) {
-    .header-title-xm {
-      font-size: 26px;
-      font-weight: bold;
-    }
-  
-    .py-100 {
-      padding-top: $fifty;
-      padding-bottom: $fifty;
-    }
-  
-    .header-title-md {
-      font-size: 30px !important;
-    }
-  
-    .fs-40 {
-      font-size: $twentyFour;
-    }
-  
-    .ps-5 {
-      padding-left: 1rem !important;
-    }
-  
-    .fs-45 {
-      font-size: $twentyFour;
-    }
-  
-    .input-group {
-      flex-direction: column;
-    }
-  
-    .input-group input {
-      width: 100% !important;
-      margin-bottom: 10px;
-      margin-right: 0 !important;
-    }
-  
-    .item {
-      width: 100% !important;
-    }
-    .doc-search{
-        width: 100%;
-    }
-    .single-them-title{
-        font-size: 30px;
-    }
-  }
 
 
 /* 
 ********* from old code
 */
-
-
-
-
-
-
-
-
-
 
 
   
@@ -2391,6 +2274,123 @@ footer{
     }
     
 }
+
+
+@media screen and (max-width: 992px) {
+    .header-title-md {
+      font-size: 50px !important;
+    }
+  
+    .subtitle-md {
+      font-size: 18px;
+    }
+  
+    .counter-text {
+      font-size: $twentyFour;
+      font-weight: 800;
+    }
+  
+    .success.py-5 br {
+      display: none;
+    }
+  
+    .success .d-flex.align-items-center.justify-content-between.flex-wrap {
+      justify-content: center !important;
+    }
+  
+    .working .col-lg-6.text-end {
+      display: none;
+    }
+  
+    .processes.bg-orange.py-100 .d-flex {
+      flex-direction: column;
+    }
+  
+    .cardds.py-100 .card p {
+      height: auto;
+    }
+  
+    .cardds.py-100 .card {
+      height: 100%;
+    }
+  
+    .fs-50 {
+      font-size: $twentyFour;
+    }
+  
+    .sliderSection .col-md-3.p-2.m-auto {
+      display: none;
+    }
+  
+    .sliderSection .col-md-9 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .doc-search{
+        width: 100%;
+    }
+    .search-btn{
+        display: none;
+    }
+    
+   
+  }
+  
+  @media screen and (max-width: 767px) {
+    .header-title-xm {
+      font-size: 26px;
+      font-weight: bold;
+    }
+  
+    .py-100 {
+      padding-top: $fifty;
+      padding-bottom: $fifty;
+    }
+  
+    .header-title-md {
+      font-size: 30px !important;
+    }
+  
+    .fs-40 {
+      font-size: $twentyFour;
+    }
+  
+    .ps-5 {
+      padding-left: 1rem !important;
+    }
+  
+    .fs-45 {
+      font-size: $twentyFour;
+    }
+  
+    .input-group {
+      flex-direction: column;
+    }
+  
+    .input-group input {
+      width: 100% !important;
+      margin-bottom: 10px;
+      margin-right: 0 !important;
+    }
+  
+    .item {
+      width: 100% !important;
+    }
+    .doc-search{
+        width: 100%;
+    }
+    .single-them-title{
+        font-size: 30px;
+    }
+    .main-title{
+        line-height: 35px;
+        padding: 10px 5px;
+    }
+    .lets{
+        margin: 40px 0 30px 0;
+    }
+  }
+
 
 
 
