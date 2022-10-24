@@ -1003,6 +1003,7 @@ footer{
     }
 }
 
+
 /* 
 *************** course page css  end
 */
@@ -2026,6 +2027,8 @@ footer{
 }
 
 
+
+
 // terms
 @mixin termsCard($bgColor, $iconBg) {
     display: flex;
@@ -2208,12 +2211,13 @@ footer{
 *************** free-course page css  start
 */ 
 
-// ********header top
+//header top
 .header-top{
     background-color: $darkGray;
     padding: 0 15px;
     div{
         ul{
+           
             li{
                 padding: 10px 0;
                 display: inline-block;
@@ -2251,7 +2255,76 @@ footer{
 .course-side{
     background-color: $darkGray;
 }
+.course-side-menu{
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            list-style: none;
+            padding: 25px 0;
+            a{
+                color: $whiteColor;
+                &:hover{
+                    color: $whiteColor;
+                }
+                .net{
+                    padding: 10px ;
+                    border-radius: 50%;
+                    background-color: $whiteColor;
+                    color: $darkGray;
+                }
+            }
+        }
+    }
+}
+.tags{
+    a{
+        text-decoration: none;
+    }
+}
 
+.fc-share{
+    a{
+        margin: 0 7px;
+    }
+}
+.sf1{
+    p{
+        color: $lightGray;
+        font-size: 15px;
+    }
+}
+.date-coment{
+    p{
+        color: $lightGray;
+        font-size: 15px;
+    }
+}
+
+.tech-name{
+    font-size: 15px;
+    display: block;
+    color: $lightGray;
+    border-bottom: 0.5px solid #A0A0A0;
+    width: 70%;
+    padding: 6px 0;
+    &:hover{
+        color: $lightGray;
+    }
+
+}
+.popular-post{
+    a{
+        font-size: 15px;
+        display: block;
+        color: $lightGray;
+        width: 70%;
+        padding: 6px 0;
+        &:hover{
+            color: $lightGray;
+        }
+    }
+}
 
 /* 
 *************** free-course page css  start
@@ -2301,6 +2374,20 @@ footer{
     }
     .benefit-title, .career-head .career-head-row .page-title, .title, .single-product-banner h2, .provided-feat .desc h3{
         font-size: 30px;
+    }
+    .tech-name{
+        width: 90%;
+    }
+    .course-side-menu ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        li{
+            padding: 10px 0;
+            margin: 0 5px;
+        }
+    }
+    .connect-box{
+        padding-left: 40px;
     }
     
 }
